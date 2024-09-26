@@ -3,6 +3,7 @@
     --Light-pink: hsl(275, 100%, 97%);
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292, 42%, 14%);
+    --Purple: hsl(292, 63%, 42%);
 
     --font-family: "Work Sans", sans-serif;
 }
@@ -41,7 +42,7 @@ html {
     border-radius: 8px;
     padding: 20px;
     width: 85%;
-    min-width: 60%;
+    max-width: 500px;
 }
 
 .title {
@@ -76,13 +77,21 @@ html {
 
 .accordion__item-text {
     width: 70%;
+    transition: color 0.5s;
+}
+
+.accordion__item-text:hover {
+    color: var(--Purple);
+    transition: color 0.5s;
 }
 
 .plus {
+    transition: 0.5s ease;
     background: url('../assets/images/icon-plus.svg') no-repeat center;
 }
 
 .minus {
+    transition: 0.5s ease;
     background: url('../assets/images/icon-minus.svg') no-repeat center;
 }
 
@@ -90,6 +99,8 @@ html {
     display: inline-block;
     background-size: contain;
     position: absolute;
+    cursor: pointer;
+    align-self: center;
     right: 10px;
     width: 30px;
     height: 30px;
@@ -97,13 +108,18 @@ html {
 
 .separator {
     margin: 10px 0;
-    border-top: solid 0.5px var(--Light-pink);
+    border: solid 0.5px var(--Light-pink);
 }
 
 .accordion__item-details {
     color: var(--Grayish-purple);
     font-family: var(--font-family);
     font-size: 1.4rem;
+
+}
+
+.accordion__item-details.hidden {
+    display: none;
 }
 
 .attribution { 

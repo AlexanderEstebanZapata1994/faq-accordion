@@ -3,6 +3,7 @@
     --Light-pink: hsl(275, 100%, 97%);
     --Grayish-purple: hsl(292, 16%, 49%);
     --Dark-purple: hsl(292, 42%, 14%);
+    --Purple: hsl(292, 63%, 42%);
 
     --font-family: "Work Sans", sans-serif;
 }
@@ -24,6 +25,8 @@ html {
 .header-picture {
   width: 100%; 
   height: 40vh;
+  background: url('../assets/images/background-pattern-mobile.svg') no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -39,7 +42,7 @@ html {
     border-radius: 8px;
     padding: 20px;
     width: 85%;
-    min-width: 60%;
+    max-width: 500px;
 }
 
 .title {
@@ -62,14 +65,61 @@ html {
 }
 
 .accordion__item-wrapper {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
-/* .accordion__item-summary {
-} */
+.accordion__item-summary {
+    font-weight: bolder;
+    display: flex;
+    position: relative;
+    margin: 20px 0;
+}
+
+.accordion__item-text {
+    width: 70%;
+    transition: color 0.5s;
+}
+
+.accordion__item-text:hover {
+    color: var(--Purple);
+    transition: color 0.5s;
+}
+
+.plus {
+    transition: 0.5s ease;
+    background: url('../assets/images/icon-plus.svg') no-repeat center;
+}
+
+.minus {
+    transition: 0.5s ease;
+    background: url('../assets/images/icon-minus.svg') no-repeat center;
+}
+
+.accordion__item-toggle-icon {
+    display: inline-block;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    align-self: center;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+} 
+
+.separator {
+    margin: 10px 0;
+    border: solid 0.5px var(--Light-pink);
+}
 
 .accordion__item-details {
     color: var(--Grayish-purple);
+    font-family: var(--font-family);
+    font-size: 1.4rem;
+
+}
+
+.accordion__item-details.hidden {
+    display: none;
 }
 
 .attribution { 

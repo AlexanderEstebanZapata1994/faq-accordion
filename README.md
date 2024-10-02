@@ -10,7 +10,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -35,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/AlexanderEstebanZapata1994/faq-accordion)
-- Live Site URL: [Add live site URL here](https://faq-accordion-aez.netlify.app/)
+- Solution URL: [Github profile](https://github.com/AlexanderEstebanZapata1994/faq-accordion)
+- Live Site URL: [Hosted on Netlify](https://faq-accordion-aez.netlify.app/)
 
 ## My process
 
@@ -48,11 +47,6 @@ Users should be able to:
 - Mobile-first workflow
 - [Javascript](https://www.javascript.com/) - Basic JS implementation for Accordion behavior
 
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 
 ## Author
